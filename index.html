@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+<h1>jQuery</h1>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+</script>
+<script>
+$(document).ready(function(){
+  $("#knop").click(function() {
+    $( "#hideMe" ).hide();
+    
+  });
+
+$("#knop2").click(function() {
+  $("#hideMe").show();
+
+});
+});
+</script>
+<div class="container-xs">
+<div class="knop">
+<label for="knop"></label>
+<button id="knop">Verberg het element</button>
+<p id="hideMe">Klik op de knop om deze tekst te verbergen.</p>
+<p>Deze tekst zal zichtbaar blijven.</p> 
+</div>
+<div class="knop2">
+<label for="knop2"></label>
+<button id="knop2">Laat het element opnieuw zien</button>
+<p id="showMe">Klik op de knop om de verborgen tekst opnieuw zichtbaar te maken.</p>
+</div>
+</div>
+</body>
+</body>
+</html>
